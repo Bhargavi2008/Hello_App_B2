@@ -1,0 +1,32 @@
+/**
+ * HelloApp.java – A simple Java application that accepts a user's name
+ * as a command-line argument and displays a personalized greeting.
+ *
+ * UC1: Display "Hello World"
+ * UC2: Display User Name with Greeting
+ *
+ * @author Developer Name
+ * @version 1.0
+ * @since UC2
+ */
+
+public class HelloApp {
+
+    public static void main(String[] args) {
+
+        // Check if user provided a command-line argument
+        if (args.length > 0) {
+
+            // Get the name from command-line argument
+            String name = args[0];
+
+            // Display personalized greeting
+            System.out.println("Hello, " + name + "!");
+        } 
+        else {
+
+            // If no argument provided
+            System.out.println("Please provide a name as a command-line argument.");
+        }
+    }
+}
